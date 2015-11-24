@@ -24,7 +24,7 @@
 	"dependencies": {
 		"async": "~0.8.0",
 		"lodash": "~2.4.1",
-		"elasticsearch": "3.0.0",
+		"elasticsearch": "9.0.0",
 		"waterline-errors": "~0.10.0"
 	},
 	"devDependencies": {
