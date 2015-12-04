@@ -68,7 +68,10 @@ This adapter exposes the following methods:
 + **Status**
   + Done
 
+###### `client()`
 
++ **returns**
+  + Elasticsearch client instance to call methods directly to elasticsearch API.
 
 ### Interfaces
 
