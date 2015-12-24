@@ -1,6 +1,6 @@
 {
-  "name": "sails-elasticsearch",
-  "version": "0.10.3",
+  "name": "sails-elastic",
+  "version": "0.11.0",
   "description": "Elasticsearch adapter for Sails / Waterline",
   "main": "./lib/adapter.js",
   "scripts": {
@@ -14,12 +14,12 @@
     "sails.js",
     "plugin"
   ],
-  "author": "Marcos Sanz <marcos.sanz@13genius.com>",
+  "author": "Mohamed Elawadi (mielawadi@gmail.com)",
   "license": "MIT",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git://github.com/marsanla/sails-elasticsearch.git"
+    "url": "git://github.com/mie00/sails-elasticsearch.git"
   },
   "dependencies": {
     "async": "~0.8.0",
