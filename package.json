@@ -1,6 +1,6 @@
 {
   "name": "sails-elastic",
-  "version": "0.11.01",
+  "version": "0.11.02",
   "description": "Elasticsearch adapter for Sails / Waterline",
   "main": "./lib/adapter.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "dependencies": {
     "async": "~0.8.0",
     "bluebird": "^3.0.6",
-    "elasticsearch": "9.0.0",
+    "elasticsearch": "^10.0.1",
     "lodash": "~2.4.1",
     "waterline-errors": "~0.10.0"
   },
