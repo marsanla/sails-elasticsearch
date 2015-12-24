@@ -15,14 +15,14 @@ $ npm install sails-elastic
 
 ```js
 {
-	adapter: 'sails-elastic',
-	hosts: ['http://127.0.0.1:9200'],
-	keepAlive: false,
-	sniffOnStart: true,
-	maxRetries: 10,
-	deadTimeout: 40000,
-	sniffOnConnectionFault: true,
-	apiVersion: '2.0'
+    adapter: 'sails-elastic',
+    hosts: ['http://127.0.0.1:9200'],
+    keepAlive: false,
+    sniffOnStart: true,
+    maxRetries: 10,
+    deadTimeout: 40000,
+    sniffOnConnectionFault: true,
+    apiVersion: '2.0'
 },
 ```
 #### Models
@@ -34,24 +34,24 @@ sails-elastic does not support `attributes` inside the model. It gets its attrib
 ```js
 // person model
 module.exports = {
-	elasticSearch: {
-		mappings: {
-			person: {
-				properties: {
-					name: {
-						type: "string",
-					},
-					adress: {
-						type: "string",
-						index: "not_analyzed"
-					},
-					age: {
-						type: "integer",
-					},
-				}
-			}
-		}
-	}
+    elasticSearch: {
+        mappings: {
+            person: {
+                properties: {
+                    name: {
+                        type: "string",
+                    },
+                    adress: {
+                        type: "string",
+                        index: "not_analyzed"
+                    },
+                    age: {
+                        type: "integer",
+                    },
+                }
+            }
+        }
+    }
 };
 ```
 
@@ -61,18 +61,18 @@ To use multiple adapters for the same model. you have to make elasticsearch the 
 
 ```js
 module.exports = {
-	connections: ['mongoConnection','elasticConnection'],
-	elasticSearch: {/*...*/},
-	attributes: {/*...*/},
-	afterCreate: function (value, callback){
-		this.createIndex(value, callback)
-	},
-	afterUpdate: function (value, callback){
-		this.updateIndex(value.id, value, callback)
-	},
-	afterDestroy: function (value, callback){
-		this.destroyIndex(value.id, callback)
-	},
+    connections: ['mongoConnection','elasticConnection'],
+    elasticSearch: {/*...*/},
+    attributes: {/*...*/},
+    afterCreate: function (value, callback){
+        this.createIndex(value, callback)
+    },
+    afterUpdate: function (value, callback){
+        this.updateIndex(value.id, value, callback)
+    },
+    afterDestroy: function (value, callback){
+        this.destroyIndex(value.id, callback)
+    },
 };
 ```
 
