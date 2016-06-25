@@ -61,7 +61,7 @@ To use multiple adapters for the same model. you have to make elasticsearch the 
 
 ```js
 module.exports = {
-    connections: ['mongoConnection','elasticConnection'],
+    connection: ['mongoConnection','elasticConnection'],
     elasticSearch: {/*...*/},
     attributes: {/*...*/},
     afterCreate: function (value, callback){
@@ -76,23 +76,25 @@ module.exports = {
 };
 ```
 
+> Warning: for sails v11.0 and earlier, connection attribute used to be defined with an 's'.
+
 ### API
 
-This adapter exposes the following methods:
+This adapter exposes the following methods (you can pass a callback function to them or use them as [bluebird](https://github.com/petkaantonov/bluebird) promises):
 
-###### `search(criteria, callback)`
+* `search(criteria, callback)`
 
-###### `createIndex(value, callback)` === `create(value, callback)`
+* `createIndex(value, callback)` === `create(value, callback)`
 
-###### `updateIndex(id, value, callback)` === `update(id, value, callback)`
+* `updateIndex(id, value, callback)` === `update(id, value, callback)`
 
-###### `destroyIndex(id, callback)` === `destroy(id, callback)`
+* `destroyIndex(id, callback)` === `destroy(id, callback)`
 
-###### `countIndex(criteria, callback)` === `count(criteria, callback)`
+* `countIndex(criteria, callback)` === `count(criteria, callback)`
 
-###### `bulk(body, callback)`
+* `bulk(body, callback)`
 
-###### `client()`
+* `client()`
 
 + **returns**
   + Elasticsearch client instance to call methods directly to elasticsearch API. You can find API reference [here](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/api-reference.html)
