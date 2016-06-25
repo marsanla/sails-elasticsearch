@@ -1,5 +1,7 @@
 # waterline-elasticsearch
 
+[![Join the chat at https://gitter.im/mie00/sails-elasticsearch](https://badges.gitter.im/mie00/sails-elasticsearch.svg)](https://gitter.im/mie00/sails-elasticsearch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### Installation
 
 To install this adapter, run:
