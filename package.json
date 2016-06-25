@@ -1,6 +1,6 @@
 {
   "name": "sails-elastic",
-  "version": "0.11.03",
+  "version": "0.12.0",
   "description": "Elasticsearch adapter for Sails / Waterline",
   "main": "./lib/adapter.js",
   "scripts": {
