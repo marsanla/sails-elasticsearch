@@ -1,42 +1,43 @@
 {
-	"name": "sails-elasticsearch",
-	"version": "0.10.3",
-	"description": "Elasticsearch adapter for Sails / Waterline",
-	"main": "./lib/adapter.js",
-	"scripts": {
-		"test": "node test/integration/runner -R spec -b"
-	},
-	"keywords": [
-		"elasticsearch",
-		"adapter",
-		"sails",
-		"waterline",
-		"sails.js",
-		"plugin"
-	],
-	"author": "Marcos Sanz <marcos.sanz@13genius.com>",
-	"license": "MIT",
-	"readmeFilename": "README.md",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/marsanla/sails-elasticsearch.git"
-	},
-	"dependencies": {
-		"async": "~0.8.0",
-		"lodash": "~2.4.1",
-		"elasticsearch": "3.0.0",
-		"waterline-errors": "~0.10.0"
-	},
-	"devDependencies": {
-		"waterline-adapter-tests": "~0.10.0",
-		"mocha": "*",
-		"captains-log": "~0.11.0"
-	},
-	"waterlineAdapter": {
-		"type": "elasticsearch",
-		"interfaces": [
-			"semantic"
-		],
-		"waterlineVersion": "~0.10.0"
-	}
+  "name": "sails-elastic",
+  "version": "0.12.0",
+  "description": "Elasticsearch adapter for Sails / Waterline",
+  "main": "./lib/adapter.js",
+  "scripts": {
+    "test": "node test/integration/runner -R spec -b"
+  },
+  "keywords": [
+    "elasticsearch",
+    "adapter",
+    "sails",
+    "waterline",
+    "sails.js",
+    "plugin"
+  ],
+  "author": "Mohamed Elawadi (mielawadi@gmail.com)",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mie00/sails-elasticsearch.git"
+  },
+  "dependencies": {
+    "async": "~0.8.0",
+    "bluebird": "^3.0.6",
+    "elasticsearch": "^10.0.1",
+    "lodash": "~2.4.1",
+    "waterline-errors": "~0.10.0"
+  },
+  "devDependencies": {
+    "waterline-adapter-tests": "~0.10.0",
+    "mocha": "*",
+    "captains-log": "~0.11.0"
+  },
+  "waterlineAdapter": {
+    "type": "elasticsearch",
+    "interfaces": [
+      "semantic"
+    ],
+    "waterlineVersion": "~0.10.0"
+  }
 }
